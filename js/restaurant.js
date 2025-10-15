@@ -34,11 +34,11 @@ $(document).ready(function(){
     var type = $(this).attr("type");
 
     if(type == "twitter"){
-      var url = "https://twitter.com/intent/tweet?text=Learning%20CSS?%20Try%20CSS%20Diner,%20the%20fun%20way%20to%20practice%20selectors%20%E2%86%92&hashtags=css,cssdiner,webdev&url=http%3A%2F%2Fcssdiner.com%2F&via=flukeout";
+      var url = "https://twitter.com/intent/tweet?text=Apprendre%20le%20CSS%3F%20Essayez%20Restaurant%20CSS%2C%20la%20fa%C3%A7on%20amusante%20de%20pratiquer%20les%20s%C3%A9lecteurs%20%E2%86%92&hashtags=css,cssdiner,webdev&url=http%3A%2F%2Fcssdiner.com%2F&via=flukeout";
     } else if (type == "facebook") {
       var url = "https://www.facebook.com/sharer.php?src=sp&u=http%3A%2F%2Fcssdiner.com";
     } else if (type == "email") {
-      var url = "mailto:?subject=Check+out+CSS+Diner&body=It's+a+fun+game+to+learn+%26+practice+CSS+selectors.%0D%0A%0D%0AYou+can+try+it+at+http://cssdiner.com";
+      var url = "mailto:?subject=D%C3%A9couvrez+Restaurant+CSS&body=C'est+un+jeu+amusant+pour+apprendre+%26+pratiquer+les+s%C3%A9lecteurs+CSS.%0D%0A%0D%0AVous+pouvez+l'essayer+%C3%A0+http://cssdiner.com";
     }
 
     PopupCenter(url, "title", 600, 450);
@@ -513,7 +513,7 @@ function sendEvent(category, action, label){
 }
 
 function winGame(){
-  $(".table").html('<span class="winner"><strong>You did it!</strong><br>You rock at CSS.</span>');
+  $(".table").html('<span class="winner"><strong>Vous avez réussi !</strong><br>Vous maîtrisez le CSS.</span>');
   addNametags();
   finished = true;
   resetTable();
@@ -630,7 +630,7 @@ function loadLevel(){
   loadBoard();
   resetTable();
 
-  $(".level-header .level-text").html("Level " + (currentLevel+1) + " of " + levels.length);
+  $(".level-header .level-text").html("Niveau " + (currentLevel+1) + " sur " + levels.length);
 
   updateProgressUI(currentLevel, checkCompleted(currentLevel));
 
